@@ -1,0 +1,13 @@
+while [ 1 ]
+	do
+	read -p 'enter an integer: ' x
+	echo $x|rev
+	sum=0
+	while [ $x -gt 0 ]
+		do
+		mod=$(($x%10))
+ 		x=$(($x/10))
+ 		sum=$(($sum + $mod))
+		done
+	echo "number of digits : $sum"
+	done

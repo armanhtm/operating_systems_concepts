@@ -1,0 +1,11 @@
+if ! [ "$1" -eq "$1" ] 2> /dev/null
+	then
+	echo "$1 is Not an integer Number" 
+	exit 1
+fi
+if ! [ "$2" -eq "$2" ] 2> /dev/null
+	then
+	echo "$2 is Not an integer Number" 
+	exit 1
+fi
+echo "sucessful"
